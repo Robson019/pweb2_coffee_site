@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Central</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home" target="_self" id="comp_name">Café Central</a>
+            <a href="#home" target="_self">Home</a>
+            <a href="#about" target="_self">Sobre</a>
+            <a href="#shop" target="_self">Shop</a>
+            <a href="#contact" target="_self">Contato</a>
+            <a href="#cart" target="_self" rel="next" id="cart_link" ><img id="cart_icon" src="images/cart_icon.png" alt="icone_carrinho" onmouseenter="changeImage('cart_icon', 'images/cart_icon_hover.png')" onmouseleave="changeImage('cart_icon', 'images/cart_icon.png')" class="icon_size"></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div>
+                <h1>CAFÉ CENTRAL</h1>
+                <p>O seu dia começa aqui!</p>
+                <p><span class="enphasis_word">+200</span> lojas por todo o Brasil</p>
+            </div>
+            <img src="images/realistic_coffee.png" alt="cafe_realista" id="home_img">
+        </section>
+        <hr>
+        <section id="about">
+            <img src="images/chalkboard_coffee.jpg" alt="paisagem_cafe" id="about_img">
+            <div>
+                <h3>SOBRE NÓS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam tenetur facere, porro natus est libero quia, ullam, molestias odit ipsum architecto consequuntur excepturi? In tenetur beatae atque ex reiciendis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veniam tenetur facere, porro natus est libero quia, ullam, molestias odit ipsum architecto consequuntur excepturi? In tenetur beatae atque ex reiciendis.</p>    
+            </div>
+        </section>
+        <hr>
+        <section id="shop">
+            <h3>PRODUTOS</h3>
+            <div class="products_block">
+                <div id="l_arrow" class="arrow_shop_director"><a href="#shop">&larr;</a></div>
+                <div>
+                    <img src="images/coffee_oval_cup.jpg" alt="cafe_macchiato" class="products_size">
+                    <p>Café Macchiato</p>
+                    <p class="price">R$15,59</p>
+                    <form action="">
+                        <label for="quantity">QNT.:</label><input type="number" name="quantity" id="quantity" value="1" required>
+                        <input type="button" value="ADICIONAR">
+                    </form>
+                </div>
+                <div id="middle_prod">
+                    <img src="images/coffee_glass_cup.jpg" alt="cafe_espresso" class="products_size">
+                    <p>Café Espresso</p>
+                    <p class="price">R$12,29</p>
+                    <form action="">
+                        <label for="quantity">QNT.:</label><input type="number" name="quantity" id="quantity" value="1" required>
+                        </label><input type="button" value="ADICIONAR">
+                    </form>
+                </div>
+                <div>
+                    <img src="images/coffee_white_cup.jpg" alt="cafe_latte" class="products_size">
+                    <p>Café Latte</p>
+                    <p class="price">R$14,99</p> 
+                    <form action="">
+                        <label for="quantity">QNT.:</label><input type="number" name="quantity" id="quantity" value="1" required>
+                        <input type="button" value="ADICIONAR">
+                    </form>
+                </div>
+                <div id="r_arrow" class="arrow_shop_director"><a href="#shop">&rarr;</a></div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer id="contact">
+
+        <div><a href="#home">&uarr;</a></div>
+
+        <nav>
+            <a href="https://api.whatsapp.com/send?phone=+5582998456754&text=Olá! Gostaria de comprar café."" target="_blank" rel="_external"><img id="call_icon" src="images/call_icon.png" alt="icone_telefone" onmouseenter="changeImage('call_icon', 'images/call_icon_hover.png')" onmouseleave="changeImage('call_icon', 'images/call_icon.png')" class="icon_size"><p>(82) 9.9845-6754</p></a><br/>
+            <a href="https://www.google.com/maps/place/Pra%C3%A7a+Manoel+Andr%C3%A9+-+Centro,+Arapiraca+-+AL,+57300-330/data=!4m2!3m1!1s0x705d598da62ad79:0x4f124237ce09471a?sa=X&ved=2ahUKEwiDk_v6oe__AhXarJUCHXiQBO4Q8gF6BAgUEAA&ved=2ahUKEwiDk_v6oe__AhXarJUCHXiQBO4Q8gF6BAgYEAI" target="_blank" rel="_external"><img id="poi_icon" src="images/poi_icon.png" alt="icone_ponto_localizacao" onmouseenter="changeImage('poi_icon', 'images/poi_icon_hover.png')" onmouseleave="changeImage('poi_icon', 'images/poi_icon.png')" class="icon_size"><address>57300-005. Praça Manoel André, Centro, Arapiraca - AL</address></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="_external"><img id="facebook_icon" src="images/facebook_icon.png" class="icon_size" alt="icone_facebook" onmouseenter="changeImage('facebook_icon', 'images/facebook_icon_hover.png')" onmouseleave="changeImage('facebook_icon', 'images/facebook_icon.png')" class="icon_size" ></a>
+            <a href="mailto:cafecentral@gmail.com" target="_blank" rel="_external"><img id="email_icon" src="images/email_icon.png" alt="icone_email" onmouseenter="changeImage('email_icon', 'images/email_icon_hover.png')" onmouseleave="changeImage('email_icon', 'images/email_icon.png')" class="icon_size" ></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="_external"><img id="instagram_icon" src="images/instagram_icon.png" alt="icone_instagram" onmouseenter="changeImage('instagram_icon', 'images/instagram_icon_hover.png')" onmouseleave="changeImage('instagram_icon', 'images/instagram_icon.png')" class="icon_size" ></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Dpt" target="_blank" rel="_external"><img id="twitter_icon" src="images/twitter_icon.png" alt="icone_twitter" onmouseenter="changeImage('twitter_icon', 'images/twitter_icon_hover.png')" onmouseleave="changeImage('twitter_icon', 'images/twitter_icon.png')" class="icon_size" ></a>
+        </nav>
+
+        <p>Site desenvolvido por &copy; <a href="https://github.com/Robson019" target="_blank" rel="_external">Robson Gominho</a> 2023 para a disciplina de PROWII</p>
+    </footer>
+</body>
+ <script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</html>
